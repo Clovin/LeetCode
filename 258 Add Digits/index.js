@@ -13,5 +13,3 @@ var addDigits = function (num) {
   }
   return num < 10 ? num : addDigits(tempNum)
 }
-
-console.log(addDigits(38))

@@ -1,0 +1,20 @@
+/**
+ * Created by Clovin on 27/01/2018.
+ */
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+/**
+ * @param {ListNode} node
+ * @return {void} Do not return anything, modify node in-place instead.
+ */
+var deleteNode = function (node) {
+  if (node.val !== undefined && node.next !== undefined) {
+    node.val = node.next.val
+    node.next = node.next.next
+  }
+}
