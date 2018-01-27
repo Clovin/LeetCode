@@ -6,8 +6,8 @@
  * @return {number}
  */
 var findComplement = function (num) {
-  // TODO: solve
-  return ~(-num)
+  return parseInt(num.toString(2)
+                     .replace(/[01]/g, match => {
+                       return match === '0' ? '1' : '0'
+                     }), 2)
 }
-
-console.log(findComplement(5))
