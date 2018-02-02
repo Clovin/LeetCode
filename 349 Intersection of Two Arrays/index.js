@@ -26,5 +26,3 @@ var intersection = function (nums1, nums2) {
 
   return result
 }
-
-intersection([1], [])
