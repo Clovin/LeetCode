@@ -29,5 +29,3 @@ var findRelativeRanks = function (nums) {
 
   return result
 }
-
-findRelativeRanks([10,3,8,9,4])
