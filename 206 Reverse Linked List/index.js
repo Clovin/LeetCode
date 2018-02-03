@@ -17,12 +17,26 @@ var reverseList = function (head) {
     return head
   }
 
-  let prev
+  if (head.next.next === null) {
+    let temp = head.next
+    head.next = null
+    temp.next = head
+    return temp
+  }
+
+  let prev = head
   let next
-  let temp = head
+  let now = head.next
 
-  temp.next = prev
-  //TODO: solve
+  while (now.next !== null) {
+    next = now.next
+    now.next = prev
+    prev = now
+    now = next
+  }
 
-  return head
+  head.next = null
+  now.next = prev
+  return now
 }
+
