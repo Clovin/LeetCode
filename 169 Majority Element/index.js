@@ -24,5 +24,3 @@ var majorityElement = function (nums) {
     tempMap.set(nums[i], temp)
   }
 }
-
-majorityElement([1])
