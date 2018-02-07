@@ -47,6 +47,3 @@ var addStrings = function (num1, num2) {
 
   return result.join('')
 }
-
-addStrings('9333852702227987',
-  '85731737104263')

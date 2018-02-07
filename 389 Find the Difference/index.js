@@ -18,5 +18,3 @@ var findTheDifference = function (s, t) {
     return tempT[i]
   }
 }
-
-console.log(findTheDifference('abcd', 'abcde'))
