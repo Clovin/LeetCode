@@ -10,7 +10,7 @@ var trailingZeroes = function (n) {
     return 0
   }
 
-  var count = 0
+  let count = 0
   while (n >= 5) {
     count += Math.floor(n / 5)
     n = parseInt(n / 5)
