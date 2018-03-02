@@ -8,5 +8,5 @@
  * @return {number}
  */
 var poorPigs = function (buckets, minutesToDie, minutesToTest) {
-  
+  // TODO: solve
 }
