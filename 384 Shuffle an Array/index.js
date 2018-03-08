@@ -5,7 +5,8 @@
  * @param {number[]} nums
  */
 var Solution = function (nums) {
-// TODO: solve
+  this.nums = Array.from(nums)
+  this.base = Array.from(nums)
 }
 
 /**
@@ -13,7 +14,8 @@ var Solution = function (nums) {
  * @return {number[]}
  */
 Solution.prototype.reset = function () {
-
+  this.nums = Array.from(this.base)
+  return this.nums
 }
 
 /**
@@ -21,7 +23,13 @@ Solution.prototype.reset = function () {
  * @return {number[]}
  */
 Solution.prototype.shuffle = function () {
-
+  for (let i = 0; i < this.nums.length; i++) {
+    let temp = this.nums[i]
+    let random = i !== 0 ? Math.floor(Math.random() * 1000000) % (i + 1) : 0
+    this.nums[i] = this.nums[random]
+    this.nums[random] = temp
+  }
+  return this.nums
 }
 
 /**
