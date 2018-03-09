@@ -14,44 +14,25 @@
  * @return {number}
  */
 var kthSmallest = function (root, k) {
-  if (root === null) {
-    return 0
-  }
-
-  let result = []
   let queue = []
-  queue.push(root)
-  while (queue.length !== 0) {
-    let tempNode = queue.shift()
-    tempNode.left !== null && queue.push(tempNode.left)
-    tempNode.right !== null && queue.push(tempNode.right)
-
-    result.push(tempNode.val)
-
-    if (result.length === k) {
-      break
-    }
+  while (root !== null) {
+    queue.unshift(root)
+    root = root.left
   }
-
-  result.sort((a, b) => a - b)
 
   while (queue.length !== 0) {
     let tempNode = queue.shift()
+    k--
+    if (k === 0) {
+      return tempNode.val
+    }
 
-    if (tempNode.val < result[k - 1]) {
-      result.splice(k - 1, 1)
-      result.push(tempNode.val)
-      result.sort((a, b) => a - b)
-
-      tempNode.left !== null && queue.push(tempNode.left)
-      tempNode.right !== null && queue.push(tempNode.right)
-    } else if (tempNode.val > result[k - 1]) {
-      tempNode.left !== null && queue.push(tempNode.left)
+    if (tempNode.right !== null) {
+      tempNode = tempNode.right
+      while (tempNode !== null) {
+        queue.unshift(tempNode)
+        tempNode = tempNode.left
+      }
     }
   }
-
-  return result[k - 1]
 }
-
-kthSmallest([3, 2, 4, 1]
-  , 1)
