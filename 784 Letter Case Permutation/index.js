@@ -29,5 +29,3 @@ function search (s, index, result) {
     search(s, index + 1, result)
   }
 }
-
-letterCasePermutation('xxulYjUwme')
