@@ -13,5 +13,21 @@
  * @return {TreeNode}
  */
 var sortedArrayToBST = function (nums) {
-  // TODO: solve
+  if (nums.length === 0) {
+    return null
+  }
+
+  return buildTree(nums, 0, nums.length - 1)
+}
+
+function buildTree (nums, low, high) {
+  if (low > high) {
+    return null
+  }
+
+  let mid = Math.floor(low + (high - low) / 2)
+  let node = new TreeNode(nums[mid])
+  node.left = buildTree(nums, low, mid - 1)
+  node.right = buildTree(nums, mid + 1, high)
+  return node
 }
