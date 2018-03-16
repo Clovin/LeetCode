@@ -1,11 +1,11 @@
 # LeetCode with JavaScript
 
-Update time: Thu Mar 15 2018 03:29:19 GMT+0800 (CST)
+Update time: Sat Mar 17 2018 01:59:00 GMT+0800 (CST)
 
-I have solved **253** / **764** problems. All unlocked easy problems are solved.
+I have solved **254** / **764** problems. All unlocked easy problems are solved.
 
 Easy: 186
 
-Medium: 67
+Medium: 68
 
 Notes: All non-JavaScript problems copy from others.
