@@ -1,10 +1,10 @@
 # LeetCode with JavaScript
 
-Update time: Fri Oct 26 2018 13:22:52 GMT+0800 (China Standard Time)
+Update time: Fri Oct 26 2018
 
-I have solved **267** / **764** problems.
+I have solved **268** / **764** problems.
 
-Easy: 189
+Easy: 190
 
 Medium: 78
 
