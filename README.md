@@ -2,9 +2,9 @@
 
 Update time: Mon Oct 31 2018
 
-I have solved **303** / **925** problems.
+I have solved **304** / **925** problems.
 
-Easy: 225
+Easy: 226
 
 Medium: 78
 
