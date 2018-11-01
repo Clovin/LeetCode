@@ -2,9 +2,9 @@
 
 Update time: Mon Oct 31 2018
 
-I have solved **313** / **925** problems.
+I have solved **314** / **925** problems. All unlocked easy problems are solved.
 
-Easy: 235
+Easy: 236
 
 Medium: 78
 
